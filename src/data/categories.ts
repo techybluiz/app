@@ -1,0 +1,88 @@
+import type { Category } from "../types"
+
+export const categories: Category[] = [
+  {
+    id: "1",
+    icon: "📱",
+    title: "Tecnologia",
+    subtitle: "Inovações e gadgets",
+    color: "#4A90E2",
+  },
+  {
+    id: "2",
+    icon: "💰",
+    title: "Economia",
+    subtitle: "Mercado e negócios",
+    color: "#50E3C2",
+  },
+  {
+    id: "3",
+    icon: "🔬",
+    title: "Ciências",
+    subtitle: "Descobertas científicas",
+    color: "#BD10E0",
+  },
+  {
+    id: "4",
+    icon: "🌿",
+    title: "Meio ambiente",
+    subtitle: "Sustentabilidade",
+    color: "#50E3C2",
+  },
+  {
+    id: "5",
+    icon: "🏆",
+    title: "Esporte",
+    subtitle: "Notícias esportivas",
+    color: "#F5A623",
+  },
+  {
+    id: "6",
+    icon: "🎨",
+    title: "Arte & Cultura",
+    subtitle: "Arte e entretenimento",
+    color: "#E94B3C",
+  },
+  {
+    id: "7",
+    icon: "🎵",
+    title: "Música",
+    subtitle: "Lançamentos musicais",
+    color: "#BD10E0",
+  },
+  {
+    id: "8",
+    icon: "✈️",
+    title: "Viagem",
+    subtitle: "Destino e dicas",
+    color: "#50E3C2",
+  },
+  {
+    id: "9",
+    icon: "❤️",
+    title: "Saúde",
+    subtitle: "Bem-estar e saúde",
+    color: "#E94B3C",
+  },
+  {
+    id: "10",
+    icon: "💼",
+    title: "Negócios",
+    subtitle: "Empreendedorismo",
+    color: "#4A90E2",
+  },
+  {
+    id: "11",
+    icon: "👕",
+    title: "Estilo de Vida",
+    subtitle: "Moda e lifestyle",
+    color: "#F5A623",
+  },
+  {
+    id: "12",
+    icon: "🚗",
+    title: "Automotivo",
+    subtitle: "Carros e mobilidade",
+    color: "#4A90E2",
+  },
+]
