@@ -1,6 +1,9 @@
+import React, { useState } from "react"
 import { NavigationContainer } from "@react-navigation/native"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { Ionicons } from "@expo/vector-icons"
+
+import OnboardingScreen from "./src/screens/OnboardingScreen"
 import HomeScreen from "./src/screens/HomeScreen"
 import ExploreScreen from "./src/screens/ExploreScreen"
 import SavedScreen from "./src/screens/SavedScreen"
@@ -17,7 +20,18 @@ export type RootTabParamList = {
 
 const Tab = createBottomTabNavigator<RootTabParamList>()
 
-export default function App(): JSX.Element {
+export default function App(): any {c
+  const [showOnboarding, setShowOnboarding] = useState(true)
+
+  if (showOnboarding) {
+    return (
+      <OnboardingScreen
+        onComplete={() => setShowOnboarding(false)}
+        onSkip={() => setShowOnboarding(false)}
+      />
+    )
+  }
+
   return (
     <NavigationContainer>
       <Tab.Navigator
